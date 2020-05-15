@@ -1,0 +1,128 @@
+All API are live and available at http://medprices.c1.biz/api/
+-------------------------------------------------------------------------------
+*>addDrug.php:
+	(http://medprices.c1.biz/api/addDrug.php)
+	- Used to add drug to database.
+	- User mail and password should be sent as POST value, with names: [mailCred and passCred].
+	- Drug details should also be sent as POST values, 
+		with names: [medName, medPrice, pharmID],
+		for: [Medicine name, Price, Pharmacy id] respectively.
+        - The page will return codes in json formate wich stands for:
+		errors:
+			11: sql error.
+			12: one or more of the parameters are empty.
+			13: Wrong credintials.
+			14: no credintials received.
+		successs:
+			20: added successfully.
+-------------------------------------------------------------------------------
+*>addPharmacy.php:
+	(http://medprices.c1.biz/api/addPharmacy.php)
+	- Used to add pharmacy to database.
+	- pharmacy details should be sent as POST values, 
+		with names: [pharmName, pharmPhone, pharmAddress, pharmNear, pharmMail, pharmPass],
+		for: [Pharmacy name, Pharmacy phone number, Pharmacy address, Nearest landmark, Pharmacy mail, Pharmacy password] respectively.
+	- all of these fields are required (mandatory).
+        - The page will return codes in json formate wich stands for:
+		errors: 
+			10: email already exists.
+			11: sql error.
+			12: one or more of the parameters are empty.
+		successs:
+			20: added successfully.
+-------------------------------------------------------------------------------
+*>getCity.php:
+	(http://medprices.c1.biz/api/getCity.php)
+	- Used to get Cities from database with ID or without it.
+	- if an ID was set as GET value (ex. http://medprices.c1.biz/api/getCity.php?id=12): 
+		Only the city with this id will be returned in json formate.
+	- if no city was found with this ID, you will get an error with code 10 in a json formate.
+	- if no ID was set (ex. http://medprices.c1.biz/api/getCity.php): 
+		All cities will be returned in json formate.
+-------------------------------------------------------------------------------
+*>getDrugs.php
+	(http://medprices.c1.biz/api/getDrugs.php)
+	- Used to get Drugs from database with ID or without it.
+	- if an ID was set as GET value (ex. http://medprices.c1.biz/api/getDrugs.php?id=12): 
+		Only the drug with this id will be returned in json formate.
+	- if no drug was found with this ID, you will get an error with code 10 in a json formate.
+	- if no ID was set (ex. http://medprices.c1.biz/api/getDrugs.php):
+		All drugs will be returned in json formate.
+-------------------------------------------------------------------------------
+*>getGov.php
+	(http://medprices.c1.biz/api/getGov.php)
+	- Used to get governorates from database with ID or without it.
+	- if an ID was set as GET value (ex. http://medprices.c1.biz/api/getGov.php?id=12): 
+		Only the governorate with this id will be returned in json formate.
+	- if no city was found with this ID, you will get an error with code 10 in a json formate.
+	- if no ID was set (ex. http://medprices.c1.biz/api/getGov.php): 
+		All governorates will be returned in json formate.
+-------------------------------------------------------------------------------
+*>getPharmacies.php
+	(http://medprices.c1.biz/api/getPharmacies.php)
+	- Used to get Pharmacies from database with ID or without it.
+	- if an ID was set as GET value (ex. http://medprices.c1.biz/api/getPharmacies.php?id=120): 
+		Only the Pharmacies with this id will be returned in json formate.
+	- if no drug was found with this ID, you will get an error with code 10 in a json formate.
+	- if no ID was set (ex. http://medprices.c1.biz/api/getPharmacies.php):
+		All Pharmacies will be returned in json formate.
+-------------------------------------------------------------------------------
+*>makeAvail.php
+	(http://medprices.c1.biz/api/makeAvail.php)
+	- Used to make the specified drug available for the pharmacy.
+	- Pharmacy mail and password must be sent as POST values, 
+		with names: [mail and pass],
+		and drug id to make available for this pharmacy should be sent as GET value,
+		(eg. http://medprices.c1.biz/api/makeAvail.php?id=11).
+	- NOTE: *****DO NOT CALL THIS API IF THE DRUG IS ALREADY AVAILABLE***** if you do this, it will add the pharmacy id again to the [availability] column in the database.
+        - The page will return codes in json formate wich stands for:
+		errors: 
+			10: User name or password are incorect.
+			11: User mail or password is empty.
+			12: Drug id is empty.
+			13: Sql error.
+			14: no record found with this drug id.
+		successs:
+			20: Updated availability.
+-------------------------------------------------------------------------------
+*>makeUnAvail.php
+	(http://medprices.c1.biz/api/makeUnAvail.php)
+	- Used to make the specified drug unavailable for the pharmacy.
+	- Pharmacy mail and password must be sent as POST values, 
+		with names: [mail and pass],
+		and drug id to make unavailable for this pharmacy should be sent as GET value,
+		(eg. http://medprices.c1.biz/api/makeUnAvail.php?id=11).
+        - The page will return codes in json formate wich stands for:
+		errors: 
+			10: User name or password are incorect.
+			11: User mail or password is empty.
+			12: Drug id is empty.
+			13: Sql error.
+			14: no record found with this drug id.
+		successs:
+			20: Updated availability.
+-------------------------------------------------------------------------------
+*>pharmSignin.php
+	(http://medprices.c1.biz/api/pharmSignin.php)
+	- Used to login with pharmacy mail and password.
+	- Pharmacy mail and password must be sent as POST values, 
+		with names: [mail and pass].
+        - The page will return codes in json formate wich stands for:
+		errors: 
+			10: User name or password are incorect.
+			11: User mail or password is empty.
+		successs:
+			20: User name and password are corect,
+				get the remaining pharmacy info from getPharmacies.php with the returned id in json,
+				(example for success:
+					{
+					  "success": {
+					    "text": "User name and password are corect",
+					    "code": 20
+					  },
+					  "id": 121
+					}
+				end of example).
+-------------------------------------------------------------------------------
+eslam98.2013@gmail.com
+

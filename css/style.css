@@ -1,0 +1,2075 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap');
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 767px) {
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .indexBody, .searchResultsBody, .pharmSignupBody, .profileBody {
+        align-content: center;
+        background-image: url(../imgs/bg2.jpg);
+        background-size: 30%;
+        color: white;
+        font-family: 'Tajawal', sans-serif;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .indexBody .mainPageContainer, .searchResultsBody .mainPageContainer, .pharmSignupBody .mainPageContainer, .profileBody .profileMainPageContainer {
+        width: 100vw;
+/*        min-height: 100vh;*/
+    }
+
+    .indexBody .mainPageContainer .header {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-top: 25%;
+        text-align: center;
+    }
+
+    .indexBody .mainPageContainer .header h3 {
+        font-size: 4em;
+    }
+
+    .indexBody .mainPageContainer .header p {
+        font-size: 1em;
+    }
+
+    .indexBody .mainPageContainer .header hr {
+        border: 1px solid white;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .indexBody .mainPageContainer .searchBar {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 15px;
+        text-align: center;
+    }
+    
+    .indexBody .mainPageContainer .searchBar form ,
+    .searchResultsBody .mainPageContainer .searchBar form {
+        text-align: right;
+    }
+    .indexBody .mainPageContainer .searchBar form label,
+    .searchResultsBody .mainPageContainer .searchBar form label {
+        padding: 5px;
+        text-align: right;
+    /*    padding-right: 15px;*/
+    }
+
+    .indexBody .mainPageContainer .searchBar form select,
+    .searchResultsBody .mainPageContainer .searchBar form select {
+        border: 0;
+        padding: 3px;
+        padding-right: 0px;
+        border-radius: 5px;
+        font-size: 1rem;
+        outline: none;
+        margin-top: 5px;
+    }
+
+    .indexBody .mainPageContainer .searchBar form label, 
+    .searchResultsBody .mainPageContainer .searchBar form label, 
+    .indexBody .mainPageContainer .searchBar form select,
+    .searchResultsBody .mainPageContainer .searchBar form select {
+/*        display: inline-block;*/
+/*        float: right;*/
+        text-align: right;
+    }
+
+    .indexBody .mainPageContainer .searchBar input[type=search] {
+        border: 0;
+        padding: 5px;
+/*        padding-right: 15px;*/
+        border-radius: 5px;
+        width: 75%;
+        font-size: 1.15rem;
+        outline: none;
+    }
+
+    .indexBody .mainPageContainer .searchBar input[type=submit] {
+        border: 0;
+        padding: 2px;
+        border-radius: 5px;
+        width: 20%;
+        color: white;
+        background-color: #6C757D;
+        font-size: 1.15rem;
+        outline: none;
+    }
+
+    .indexBody .mainPageContainer .footer h5 {
+        padding-top: 15px;
+        text-align: center;
+    }
+
+    .indexBody .mainPageContainer .footer h5 a {
+        color: lightgray;
+    }
+
+
+    /*-----------------------------------*/
+
+
+
+    .searchResultsBody .mainPageContainer .header , .searchResultsBody .mainPageContainer .searchBar {
+/*        display: inline-block;*/
+    }
+
+    .searchResultsBody .mainPageContainer .header {
+        width: 100%;
+/*
+        margin-left: 20%;
+        margin-right: 20%;
+*/
+        padding-top: 15px;
+        text-align: center;
+    }
+
+    .searchResultsBody .mainPageContainer .header h3 {
+        font-size: 4em;
+    }
+
+    .searchResultsBody .mainPageContainer .header h3 a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .searchResultsBody .mainPageContainer .searchBar {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .searchResultsBody .mainPageContainer .searchBar input[type=search] {
+        border: 0;
+        padding: 5px;
+/*        padding-right: 15px;*/
+        border-radius: 5px;
+        width: 75%;
+        font-size: 1.15rem;
+        outline: none;
+    }
+
+    .searchResultsBody .mainPageContainer .searchBar input[type=submit] {
+        border: 0;
+        padding: 2px;
+        border-radius: 5px;
+        width: 20%;
+        color: white;
+        background-color: #6C757D;
+        font-size: 1.15rem;
+        outline: none;
+    }
+
+    .searchResultsBody .mainPageContainer hr {
+        border: 1px solid white;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        width: 90%;
+        margin-right: 5%;   
+    }
+
+    .searchResultsBody .mainPageContainer .searchResults .resultsTable {
+        text-align: right;
+        width: 90%;
+        margin-right: 5%;
+        border-collapse: collapse;
+        background-color: #F1F1F1;
+        color: black;
+        border-radius: 0 0 5px 5px;
+    }
+
+    .searchResultsBody .mainPageContainer .searchResults .resultsTable caption {
+        text-align: right;
+        padding: 10px;
+        font-size: 1.5em;
+        background-color: #F1F1F1;
+        color: black;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .searchResultsBody .mainPageContainer .searchResults .resultsTable .dividor {
+        border: 1px solid black;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 99%;
+        margin-right: 0; 
+        border-style: dotted;
+    }
+
+    .searchResultsBody .mainPageContainer .searchResults .resultsTable .dividor:last-child {
+         border: 0;
+    }
+
+    .searchResultsBody .mainPageContainer .searchResults .resultsTable th, .searchResultsBody .mainPageContainer .searchResults .resultsTable td {
+        vertical-align: top;
+        border-bottom: 2px solid black;
+        padding: 5px
+    }
+
+     .searchResultsBody .mainPageContainer .searchResults .resultsTable tr:last-child td {
+        border-bottom: 0;
+    }
+
+    .searchResultsBody .mainPageContainer .searchResults .resultsTable td a {
+        color: gray;
+        cursor: pointer;
+    }
+
+
+
+
+
+    .floatingInfo {
+        display: none;
+        position: fixed;
+        top: 25%;
+        right: 7.5%;
+        min-width: 85%;
+        max-width: 85%;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    .floatingInfo-header {
+        padding: 25px 15px;
+        background: #555;
+        font-size: 30px;
+        color: white;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .floatingInfo-container {
+        padding: 15px;
+        background-color: #ccc;
+        color: black;
+        border-radius: 0 0 5px 5px;
+        font-size: 1rem;
+    }
+    
+    .floatingInfo-container input{
+        padding: 5px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        font-size: 1.25rem;
+        border: 0;
+        width: 75%;
+    }
+    
+    .floatingInfo-container input[type=submit]{
+        padding: 5px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        font-size: 1.25rem;
+        border: 0;
+        width: 25%;
+    }
+
+    .closebtn {
+        position: absolute;
+        top: 5px;
+        left: 15px;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .closebtn:hover {
+        color: lightgrey;
+    }
+
+
+
+
+
+
+    /*----------------------------------------------------------------*/
+
+
+
+    .pharmSignupBody .mainPageContainer .signupFormContainer {
+        width: 80%;
+        margin-right: 8%;
+        background-color: #F1F1F1;
+        color: black;
+        font-weight: 600;
+        border-radius: 5px;
+        padding: 15px;
+        position: absolute;
+        top: 10%;
+    }
+
+    .pharmSignupBody .mainPageContainer .signupFormContainer label, .pharmSignupBody .mainPageContainer .signupFormContainer input {
+        display: block;
+        width: 80%;
+        font-size: 1.25rem;
+        border: 0;
+        margin: 5px;
+        padding: 5px;
+        background-color: transparent;
+    }
+
+    .pharmSignupBody .mainPageContainer .signupFormContainer .cityTxt,
+    .pharmSignupBody .mainPageContainer .signupFormContainer .govTxt {
+/*        display: inline-block;*/
+        width: 8%;
+        font-size: 1rem;
+        border: 0;
+        margin: 5px;
+        padding: 5px;
+        background-color: transparent;
+    }
+
+    .pharmSignupBody .mainPageContainer .signupFormContainer select {
+/*        display: inline-block;*/
+        width: 40%;
+        font-size: 1.25rem;
+        border: 0;
+        margin: 5px;
+        padding: 5px;
+        background-color: transparent;
+    }
+
+    .pharmSignupBody .mainPageContainer .signupFormContainer input,
+    .pharmSignupBody .mainPageContainer .signupFormContainer select{
+        border-bottom: 1px solid lightgray;
+        outline: none;
+    }
+
+    .pharmSignupBody .mainPageContainer .signupFormContainer input:focus,
+    .pharmSignupBody .mainPageContainer .signupFormContainer select:focus{
+        border-bottom: 1px solid gray;
+    }
+
+    .pharmSignupBody .mainPageContainer .signupFormContainer input[type=submit] {
+        background-color: #6C757D;
+        width: 20%;
+        color: white;
+        border-radius: 5px;
+        margin-top: 15px;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .pharmSignupBody .mainPageContainer .signupFormContainer input[type=button] {
+        width: 20%;
+        color: black;
+        border: 0;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .err {
+        color: orangered;
+    }
+
+    .success{
+        color: lawngreen;
+    }
+
+
+
+    /*-----------------------------------------------------------*/
+
+    .profileBody .profileMainPageContainer nav {
+        background-color: #4D4D4D;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .profileBody .profileMainPageContainer nav p,
+    .profileBody .profileMainPageContainer nav a {
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .profileBody .profileMainPageContainer nav a {
+        float: left;
+        border: 1px solid white;
+        background-color: white;
+        padding: 7px;
+        margin-top: -7px;
+        border-radius: 5px;
+        color: #4D4D4D;
+    }
+
+    .card {
+        background-color: #F1F1F1;
+        color: black;
+        font-weight: 600;
+        border-radius: 5px;
+        padding: 15px;
+        float: right;
+        margin-top: 15px;
+/*        max-height: 70vh;*/
+        overflow: auto;
+    }
+
+    .mainCard {
+        width: 85vw;
+        margin-right: 5vw;
+/*        margin-left: 10vw;*/
+    }
+
+    .infoCard {
+        width: 85vw;
+        margin-right: 5vw;
+/*        margin-left: 10vw;*/
+        margin-bottom: 15px;
+    }
+
+    .card::-webkit-scrollbar {
+      width: 10px;
+        border-radius: 5px;
+    }
+
+    /* Track */
+    .card::-webkit-scrollbar-track {
+      background: #f1f1f1; 
+        border-radius: 5px;
+    }
+
+    /* Handle */
+    .card::-webkit-scrollbar-thumb {
+      background: #888; 
+        border-radius: 4px;
+    }
+
+    /* Handle on hover */
+    .card::-webkit-scrollbar-thumb:hover {
+      background: #555; 
+    }
+
+    .infoCard h3 {
+        padding-bottom: 15px;
+    }
+
+    .infoCard h3 span {
+        font-size: 0.85rem;
+    }
+
+    .infoCard .infoLabel {
+        text-decoration: underline;
+        margin-right: 15px;
+    }
+
+    .infoCard .mailLabel {
+        direction: rtl;
+        display: inline-block;
+    }
+
+    .infoCard .mail {
+        direction:ltr;
+        display:inline-block;
+    }
+
+    .mainCard .fakeForm {
+        display: inline-block;
+    }
+
+    .mainCard .fakeForm input[type=number] {
+        display: none;
+    }
+
+    .mainCard .fakeForm input[type=submit] {
+        border: 0;
+        background-color: white;
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+
+    .mainCard .fakeForm input[type=submit]:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .mainCard .profileSearch input[type=search] {
+        border: 0;
+        padding: 5px;
+        padding-right: 15px;
+        margin-top: 10px;
+        border-radius: 5px;
+        width: 60%;
+        font-size: 1rem;
+        outline: none;
+    }
+
+    /* clears the 'X' from Internet Explorer */
+    .mainCard .profileSearch input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
+    .mainCard .profileSearch input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
+
+    /* clears the 'X' from Chrome */
+    .mainCard .profileSearch input[type="search"]::-webkit-search-decoration,
+    .mainCard .profileSearch input[type="search"]::-webkit-search-cancel-button,
+    .mainCard .profileSearch input[type="search"]::-webkit-search-results-button,
+    .mainCard .profileSearch input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+
+    .mainCard .profileSearch input[type=submit] {
+        border: 0;
+        padding: 2px;
+        border-radius: 5px;
+        width: 20%;
+        color: white;
+        background-color: #6C757D;
+        font-size: 1rem;
+        outline: none;
+    }
+
+    .mainCard .profileSearch a {
+        text-decoration: none;
+        font-size: 0.85rem;
+        color: blue;
+        
+    }}
+
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .indexBody, .searchResultsBody, .pharmSignupBody, .profileBody {
+        align-content: center;
+        background-image: url(../imgs/bg2.jpg);
+        background-size: 30%;
+        color: white;
+        font-family: 'Tajawal', sans-serif;
+    }
+
+    .indexBody .mainPageContainer, .searchResultsBody .mainPageContainer, .pharmSignupBody .mainPageContainer, .profileBody .profileMainPageContainer {
+        width: 100vw;
+        min-height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .indexBody .mainPageContainer .header {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+        padding-top: 10%;
+        text-align: center;
+    }
+
+    .indexBody .mainPageContainer .header h3 {
+        font-size: 5em;
+    }
+
+    .indexBody .mainPageContainer .header p {
+        font-size: 1.5em;
+    }
+
+    .indexBody .mainPageContainer .header hr {
+        border: 1px solid white;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .indexBody .mainPageContainer .searchBar {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .indexBody .mainPageContainer .searchBar form label,
+    .searchResultsBody .mainPageContainer .searchBar form label {
+        padding: 5px;
+    /*    padding-right: 15px;*/
+    }
+
+    .indexBody .mainPageContainer .searchBar form select,
+    .searchResultsBody .mainPageContainer .searchBar form select {
+        border: 0;
+        padding: 3px;
+        padding-right: 5px;
+        border-radius: 5px;
+        font-size: 1rem;
+        outline: none;
+        margin-top: 5px;
+    }
+
+    .indexBody .mainPageContainer .searchBar form label, 
+    .searchResultsBody .mainPageContainer .searchBar form label, 
+    .indexBody .mainPageContainer .searchBar form select,
+    .searchResultsBody .mainPageContainer .searchBar form select {
+        display: inline-block;
+    /*    float: right;*/
+    }
+
+    .indexBody .mainPageContainer .searchBar input[type=search] {
+        border: 0;
+        padding: 5px;
+        padding-right: 15px;
+        border-radius: 5px;
+        width: 80%;
+        font-size: 1.15rem;
+        outline: none;
+    }
+
+    .indexBody .mainPageContainer .searchBar input[type=submit] {
+        border: 0;
+        padding: 5px;
+        border-radius: 5px;
+        width: 10%;
+        color: white;
+        background-color: #6C757D;
+        font-size: 1.15rem;
+        outline: none;
+    }
+
+    .indexBody .mainPageContainer .footer h5 {
+        padding-top: 5px;
+        text-align: center;
+    }
+
+    .indexBody .mainPageContainer .footer h5 a {
+        color: lightgray;
+    }
+
+
+    /*-----------------------------------*/
+
+
+
+    .searchResultsBody .mainPageContainer .header , .searchResultsBody .mainPageContainer .searchBar {
+/*        display: inline-block;*/
+    }
+
+    .searchResultsBody .mainPageContainer .header {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+        text-align: center;
+    }
+
+    .searchResultsBody .mainPageContainer .header h3 {
+        font-size: 5em;
+    }
+
+    .searchResultsBody .mainPageContainer .header h3 a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .searchResultsBody .mainPageContainer .searchBar {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .searchResultsBody .mainPageContainer .searchBar input[type=search] {
+        border: 0;
+        padding: 5px;
+        padding-right: 15px;
+        border-radius: 5px;
+        width: 80%;
+        font-size: 1.15rem;
+        outline: none;
+    }
+
+    .searchResultsBody .mainPageContainer .searchBar input[type=submit] {
+        border: 0;
+        padding: 5px;
+        border-radius: 5px;
+        width: 10%;
+        color: white;
+        background-color: #6C757D;
+        font-size: 1.15rem;
+        outline: none;
+    }
+
+    .searchResultsBody .mainPageContainer hr {
+        border: 1px solid white;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        width: 90%;
+        margin-right: 5%;   
+    }
+
+    .searchResultsBody .mainPageContainer .searchResults .resultsTable {
+        text-align: right;
+        width: 80%;
+        margin-right: 10%;
+        border-collapse: collapse;
+        background-color: #F1F1F1;
+        color: black;
+        border-radius: 0 0 5px 5px;
+    }
+
+    .searchResultsBody .mainPageContainer .searchResults .resultsTable caption {
+        text-align: right;
+        padding: 10px;
+        font-size: 1.5em;
+        background-color: #F1F1F1;
+        color: black;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .searchResultsBody .mainPageContainer .searchResults .resultsTable .dividor {
+        border: 1px solid black;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 99%;
+        margin-right: 0; 
+        border-style: dotted;
+    }
+
+    .searchResultsBody .mainPageContainer .searchResults .resultsTable .dividor:last-child {
+         border: 0;
+    }
+
+    .searchResultsBody .mainPageContainer .searchResults .resultsTable th, .searchResultsBody .mainPageContainer .searchResults .resultsTable td {
+        vertical-align: top;
+        border-bottom: 2px solid black;
+        padding: 5px
+    }
+
+     .searchResultsBody .mainPageContainer .searchResults .resultsTable tr:last-child td {
+        border-bottom: 0;
+    }
+
+    .searchResultsBody .mainPageContainer .searchResults .resultsTable td a {
+        color: gray;
+        cursor: pointer;
+    }
+
+
+
+
+
+    .floatingInfo {
+        display: none;
+        position: fixed;
+        bottom: 50%;
+        right: 12.5%;
+        min-width: 75%;
+        max-width: 75%;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    .floatingInfo-header {
+        padding: 25px 15px;
+        background: #555;
+        font-size: 30px;
+        color: white;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .floatingInfo-container {
+        padding: 15px;
+        background-color: #ccc;
+        color: black;
+        border-radius: 0 0 5px 5px;
+        font-size: 1.25rem;
+    }
+    
+    .floatingInfo-container input{
+        padding: 5px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        font-size: 1.25rem;
+        border: 0;
+        width: 75%;
+    }
+    
+    .floatingInfo-container input[type=submit]{
+        padding: 5px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        font-size: 1.25rem;
+        border: 0;
+        width: 25%;
+    }
+
+    .closebtn {
+        position: absolute;
+        top: 5px;
+        left: 15px;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .closebtn:hover {
+        color: lightgrey;
+    }
+
+
+
+
+
+
+    /*----------------------------------------------------------------*/
+
+
+
+    .pharmSignupBody .mainPageContainer .signupFormContainer {
+        width: 80%;
+        margin-right: 10%;
+        background-color: #F1F1F1;
+        color: black;
+        font-weight: 600;
+        border-radius: 5px;
+        padding: 15px;
+        position: absolute;
+        top: 20%;
+    }
+
+    .pharmSignupBody .mainPageContainer .signupFormContainer label, .pharmSignupBody .mainPageContainer .signupFormContainer input {
+        display: block;
+        width: 60%;
+        font-size: 1.25rem;
+        border: 0;
+        margin: 5px;
+        padding: 5px;
+        background-color: transparent;
+    }
+
+    .pharmSignupBody .mainPageContainer .signupFormContainer .cityTxt,
+    .pharmSignupBody .mainPageContainer .signupFormContainer .govTxt {
+        display: inline-block;
+        width: 8%;
+        font-size: 1rem;
+        border: 0;
+        margin: 5px;
+        padding: 5px;
+        background-color: transparent;
+    }
+
+    .pharmSignupBody .mainPageContainer .signupFormContainer select {
+        display: inline-block;
+        width: 50%;
+        font-size: 1.25rem;
+        border: 0;
+        margin: 5px;
+        padding: 5px;
+        background-color: transparent;
+    }
+
+    .pharmSignupBody .mainPageContainer .signupFormContainer input,
+    .pharmSignupBody .mainPageContainer .signupFormContainer select{
+        border-bottom: 1px solid lightgray;
+        outline: none;
+    }
+
+    .pharmSignupBody .mainPageContainer .signupFormContainer input:focus,
+    .pharmSignupBody .mainPageContainer .signupFormContainer select:focus{
+        border-bottom: 1px solid gray;
+    }
+
+    .pharmSignupBody .mainPageContainer .signupFormContainer input[type=submit] {
+        background-color: #6C757D;
+        width: 20%;
+        color: white;
+        border-radius: 5px;
+        margin-top: 15px;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .pharmSignupBody .mainPageContainer .signupFormContainer input[type=button] {
+        width: 10%;
+        color: black;
+        border: 0;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .err {
+        color: orangered;
+    }
+
+    .success{
+        color: lawngreen;
+    }
+
+
+
+    /*-----------------------------------------------------------*/
+
+    .profileBody .profileMainPageContainer nav {
+        background-color: #4D4D4D;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .profileBody .profileMainPageContainer nav p,
+    .profileBody .profileMainPageContainer nav a {
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .profileBody .profileMainPageContainer nav a {
+        float: left;
+        border: 1px solid white;
+        background-color: white;
+        padding: 7px;
+        margin-top: -7px;
+        border-radius: 5px;
+        color: #4D4D4D;
+    }
+
+    .card {
+        background-color: #F1F1F1;
+        color: black;
+        font-weight: 600;
+        border-radius: 5px;
+        padding: 15px;
+        float: right;
+        margin-top: 35px;
+/*        max-height: 70vh;*/
+        overflow: auto;
+    }
+
+    .mainCard {
+        width: 80vw;
+        margin-right: 10vw;
+        margin-left: 10vw;
+    }
+
+    .infoCard {
+        width: 80vw;
+        margin-right: 10vw;
+        margin-left: 10vw;
+    }
+
+    .card::-webkit-scrollbar {
+      width: 10px;
+        border-radius: 5px;
+    }
+
+    /* Track */
+    .card::-webkit-scrollbar-track {
+      background: #f1f1f1; 
+        border-radius: 5px;
+    }
+
+    /* Handle */
+    .card::-webkit-scrollbar-thumb {
+      background: #888; 
+        border-radius: 4px;
+    }
+
+    /* Handle on hover */
+    .card::-webkit-scrollbar-thumb:hover {
+      background: #555; 
+    }
+
+    .infoCard h3 {
+        padding-bottom: 15px;
+    }
+
+    .infoCard h3 span {
+        font-size: 0.85rem;
+    }
+
+    .infoCard .infoLabel {
+        text-decoration: underline;
+        margin-right: 15px;
+    }
+
+    .infoCard .mailLabel {
+        direction: rtl;
+        display: inline-block;
+    }
+
+    .infoCard .mail {
+        direction:ltr;
+        display:inline-block;
+    }
+
+    .mainCard .fakeForm {
+        display: inline-block;
+    }
+
+    .mainCard .fakeForm input[type=number] {
+        display: none;
+    }
+
+    .mainCard .fakeForm input[type=submit] {
+        border: 0;
+        background-color: white;
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+
+    .mainCard .fakeForm input[type=submit]:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .mainCard .profileSearch input[type=search] {
+        border: 0;
+        padding: 5px;
+        padding-right: 15px;
+        margin-top: 10px;
+        border-radius: 5px;
+        width: 40%;
+        font-size: 1rem;
+        outline: none;
+    }
+
+    /* clears the 'X' from Internet Explorer */
+    .mainCard .profileSearch input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
+    .mainCard .profileSearch input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
+
+    /* clears the 'X' from Chrome */
+    .mainCard .profileSearch input[type="search"]::-webkit-search-decoration,
+    .mainCard .profileSearch input[type="search"]::-webkit-search-cancel-button,
+    .mainCard .profileSearch input[type="search"]::-webkit-search-results-button,
+    .mainCard .profileSearch input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+
+    .mainCard .profileSearch input[type=submit] {
+        border: 0;
+        padding: 5px;
+        border-radius: 5px;
+        width: 7%;
+        color: white;
+        background-color: #6C757D;
+        font-size: 1rem;
+        outline: none;
+    }
+
+    .mainCard .profileSearch a {
+        text-decoration: none;
+        font-size: 0.85rem;
+        color: blue;
+    }}
+
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1023px) {
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .indexBody, .searchResultsBody, .pharmSignupBody, .profileBody {
+        align-content: center;
+        background-image: url(../imgs/bg2.jpg);
+        background-size: 30%;
+        color: white;
+        font-family: 'Tajawal', sans-serif;
+    }
+
+    .indexBody .mainPageContainer, .searchResultsBody .mainPageContainer, .pharmSignupBody .mainPageContainer, .profileBody .profileMainPageContainer {
+        width: 100vw;
+        min-height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .indexBody .mainPageContainer .header {
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+        padding-top: 5%;
+        text-align: center;
+    }
+
+    .indexBody .mainPageContainer .header h3 {
+        font-size: 5em;
+    }
+
+    .indexBody .mainPageContainer .header p {
+        font-size: 1.5em;
+    }
+
+    .indexBody .mainPageContainer .header hr {
+        border: 1px solid white;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .indexBody .mainPageContainer .searchBar {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .indexBody .mainPageContainer .searchBar form label,
+    .searchResultsBody .mainPageContainer .searchBar form label {
+        padding: 5px;
+    /*    padding-right: 15px;*/
+    }
+
+    .indexBody .mainPageContainer .searchBar form select,
+    .searchResultsBody .mainPageContainer .searchBar form select {
+        border: 0;
+        padding: 3px;
+        padding-right: 5px;
+        border-radius: 5px;
+        font-size: 1rem;
+        outline: none;
+        margin-top: 5px;
+    }
+
+    .indexBody .mainPageContainer .searchBar form label, 
+    .searchResultsBody .mainPageContainer .searchBar form label, 
+    .indexBody .mainPageContainer .searchBar form select,
+    .searchResultsBody .mainPageContainer .searchBar form select {
+        display: inline-block;
+    /*    float: right;*/
+    }
+
+    .indexBody .mainPageContainer .searchBar input[type=search] {
+        border: 0;
+        padding: 5px;
+        padding-right: 15px;
+        border-radius: 5px;
+        width: 80%;
+        font-size: 1.15rem;
+        outline: none;
+    }
+
+    .indexBody .mainPageContainer .searchBar input[type=submit] {
+        border: 0;
+        padding: 5px;
+        border-radius: 5px;
+        width: 10%;
+        color: white;
+        background-color: #6C757D;
+        font-size: 1.15rem;
+        outline: none;
+    }
+
+    .indexBody .mainPageContainer .footer h5 {
+        padding-top: 5px;
+        text-align: center;
+    }
+
+    .indexBody .mainPageContainer .footer h5 a {
+        color: lightgray;
+    }
+
+
+    /*-----------------------------------*/
+
+
+
+    .searchResultsBody .mainPageContainer .header , .searchResultsBody .mainPageContainer .searchBar {
+        display: inline-block;
+    }
+
+    .searchResultsBody .mainPageContainer .header {
+        width: 25%;
+    }
+
+    .searchResultsBody .mainPageContainer .header h3 {
+        font-size: 5em;
+    }
+
+    .searchResultsBody .mainPageContainer .header h3 a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .searchResultsBody .mainPageContainer .searchBar {
+        width: 60%;
+        margin-top: 25px;
+    }
+
+    .searchResultsBody .mainPageContainer .searchBar input[type=search] {
+        border: 0;
+        padding: 5px;
+        padding-right: 15px;
+        border-radius: 5px;
+        width: 80%;
+        font-size: 1.15rem;
+        outline: none;
+    }
+
+    .searchResultsBody .mainPageContainer .searchBar input[type=submit] {
+        border: 0;
+        padding: 5px;
+        border-radius: 5px;
+        width: 10%;
+        color: white;
+        background-color: #6C757D;
+        font-size: 1.15rem;
+        outline: none;
+    }
+
+    .searchResultsBody .mainPageContainer hr {
+        border: 1px solid white;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        width: 90%;
+        margin-right: 5%;   
+    }
+
+    .searchResultsBody .mainPageContainer .searchResults .resultsTable {
+        text-align: right;
+        width: 80%;
+        margin-right: 10%;
+        border-collapse: collapse;
+        background-color: #F1F1F1;
+        color: black;
+        border-radius: 0 0 5px 5px;
+    }
+
+    .searchResultsBody .mainPageContainer .searchResults .resultsTable caption {
+        text-align: right;
+        padding: 10px;
+        font-size: 1.5em;
+        background-color: #F1F1F1;
+        color: black;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .searchResultsBody .mainPageContainer .searchResults .resultsTable .dividor {
+        border: 1px solid black;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 99%;
+        margin-right: 0; 
+        border-style: dotted;
+    }
+
+    .searchResultsBody .mainPageContainer .searchResults .resultsTable .dividor:last-child {
+         border: 0;
+    }
+
+    .searchResultsBody .mainPageContainer .searchResults .resultsTable th, .searchResultsBody .mainPageContainer .searchResults .resultsTable td {
+        vertical-align: top;
+        border-bottom: 2px solid black;
+        padding: 5px
+    }
+
+     .searchResultsBody .mainPageContainer .searchResults .resultsTable tr:last-child td {
+        border-bottom: 0;
+    }
+
+    .searchResultsBody .mainPageContainer .searchResults .resultsTable td a {
+        color: gray;
+        cursor: pointer;
+    }
+
+
+
+
+
+    .floatingInfo {
+        display: none;
+        position: fixed;
+        bottom: 50%;
+        right: 25%;
+        min-width: 50%;
+        max-width: 50%;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    .floatingInfo-header {
+        padding: 25px 15px;
+        background: #555;
+        font-size: 30px;
+        color: white;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .floatingInfo-container {
+        padding: 15px;
+        background-color: #ccc;
+        color: black;
+        border-radius: 0 0 5px 5px;
+    }
+
+    .closebtn {
+        position: absolute;
+        top: 5px;
+        left: 15px;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .closebtn:hover {
+        color: lightgrey;
+    }
+
+
+
+
+
+
+    /*----------------------------------------------------------------*/
+
+
+
+    .pharmSignupBody .mainPageContainer .signupFormContainer {
+        width: 60%;
+        margin-right: 20%;
+        background-color: #F1F1F1;
+        color: black;
+        font-weight: 600;
+        border-radius: 5px;
+        padding: 15px;
+        position: absolute;
+        top: 15%;
+    }
+
+    .pharmSignupBody .mainPageContainer .signupFormContainer label, .pharmSignupBody .mainPageContainer .signupFormContainer input {
+        display: block;
+        width: 60%;
+        font-size: 1.25rem;
+        border: 0;
+        margin: 5px;
+        padding: 5px;
+        background-color: transparent;
+    }
+
+    .pharmSignupBody .mainPageContainer .signupFormContainer .cityTxt,
+    .pharmSignupBody .mainPageContainer .signupFormContainer .govTxt {
+        display: inline-block;
+        width: 8%;
+        font-size: 1rem;
+        border: 0;
+        margin: 5px;
+        padding: 5px;
+        background-color: transparent;
+    }
+
+    .pharmSignupBody .mainPageContainer .signupFormContainer select {
+        display: inline-block;
+        width: 50%;
+        font-size: 1.25rem;
+        border: 0;
+        margin: 5px;
+        padding: 5px;
+        background-color: transparent;
+    }
+
+    .pharmSignupBody .mainPageContainer .signupFormContainer input,
+    .pharmSignupBody .mainPageContainer .signupFormContainer select{
+        border-bottom: 1px solid lightgray;
+        outline: none;
+    }
+
+    .pharmSignupBody .mainPageContainer .signupFormContainer input:focus,
+    .pharmSignupBody .mainPageContainer .signupFormContainer select:focus{
+        border-bottom: 1px solid gray;
+    }
+
+    .pharmSignupBody .mainPageContainer .signupFormContainer input[type=submit] {
+        background-color: #6C757D;
+        width: 20%;
+        color: white;
+        border-radius: 5px;
+        margin-top: 15px;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .pharmSignupBody .mainPageContainer .signupFormContainer input[type=button] {
+        width: 10%;
+        color: black;
+        border: 0;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .err {
+        color: orangered;
+    }
+
+    .success{
+        color: lawngreen;
+    }
+
+
+
+    /*-----------------------------------------------------------*/
+
+    .profileBody .profileMainPageContainer nav {
+        background-color: #4D4D4D;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .profileBody .profileMainPageContainer nav p,
+    .profileBody .profileMainPageContainer nav a {
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .profileBody .profileMainPageContainer nav a {
+        float: left;
+        border: 1px solid white;
+        background-color: white;
+        padding: 7px;
+        margin-top: -7px;
+        border-radius: 5px;
+        color: #4D4D4D;
+    }
+
+    .card {
+        background-color: #F1F1F1;
+        color: black;
+        font-weight: 600;
+        border-radius: 5px;
+        padding: 15px;
+        float: right;
+        margin-top: 35px;
+        max-height: 70vh;
+        overflow: auto;
+    }
+
+    .mainCard {
+        width: 50vw;
+        margin-right: 5vw;
+        margin-left: 5vw;
+    }
+
+    .infoCard {
+        width: 30vw;
+    }
+
+    .card::-webkit-scrollbar {
+      width: 10px;
+        border-radius: 5px;
+    }
+
+    /* Track */
+    .card::-webkit-scrollbar-track {
+      background: #f1f1f1; 
+        border-radius: 5px;
+    }
+
+    /* Handle */
+    .card::-webkit-scrollbar-thumb {
+      background: #888; 
+        border-radius: 4px;
+    }
+
+    /* Handle on hover */
+    .card::-webkit-scrollbar-thumb:hover {
+      background: #555; 
+    }
+
+    .infoCard h3 {
+        padding-bottom: 15px;
+    }
+
+    .infoCard h3 span {
+        font-size: 0.85rem;
+    }
+
+    .infoCard .infoLabel {
+        text-decoration: underline;
+        margin-right: 15px;
+    }
+
+    .infoCard .mailLabel {
+        direction: rtl;
+        display: inline-block;
+    }
+
+    .infoCard .mail {
+        direction:ltr;
+        display:inline-block;
+    }
+
+    .mainCard .fakeForm {
+        display: inline-block;
+    }
+
+    .mainCard .fakeForm input[type=number] {
+        display: none;
+    }
+
+    .mainCard .fakeForm input[type=submit] {
+        border: 0;
+        background-color: white;
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+
+    .mainCard .fakeForm input[type=submit]:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .mainCard .profileSearch input[type=search] {
+        border: 0;
+        padding: 5px;
+        padding-right: 15px;
+        margin-top: 10px;
+        border-radius: 5px;
+        width: 40%;
+        font-size: 1rem;
+        outline: none;
+    }
+
+    /* clears the 'X' from Internet Explorer */
+    .mainCard .profileSearch input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
+    .mainCard .profileSearch input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
+
+    /* clears the 'X' from Chrome */
+    .mainCard .profileSearch input[type="search"]::-webkit-search-decoration,
+    .mainCard .profileSearch input[type="search"]::-webkit-search-cancel-button,
+    .mainCard .profileSearch input[type="search"]::-webkit-search-results-button,
+    .mainCard .profileSearch input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+
+    .mainCard .profileSearch input[type=submit] {
+        border: 0;
+        padding: 5px;
+        border-radius: 5px;
+        width: 7%;
+        color: white;
+        background-color: #6C757D;
+        font-size: 1rem;
+        outline: none;
+    }
+
+    .mainCard .profileSearch a {
+        text-decoration: none;
+        font-size: 0.85rem;
+        color: blue;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .indexBody, .searchResultsBody, .pharmSignupBody, .profileBody {
+        align-content: center;
+        background-image: url(../imgs/bg2.jpg);
+        background-size: 30%;
+        color: white;
+        font-family: 'Tajawal', sans-serif;
+    }
+
+    .indexBody .mainPageContainer, .searchResultsBody .mainPageContainer, .pharmSignupBody .mainPageContainer, .profileBody .profileMainPageContainer {
+        width: 100vw;
+        min-height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .indexBody .mainPageContainer .header {
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+        padding-top: 5%;
+        text-align: center;
+    }
+
+    .indexBody .mainPageContainer .header h3 {
+        font-size: 5em;
+    }
+
+    .indexBody .mainPageContainer .header p {
+        font-size: 1.5em;
+    }
+
+    .indexBody .mainPageContainer .header hr {
+        border: 1px solid white;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .indexBody .mainPageContainer .searchBar {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .indexBody .mainPageContainer .searchBar form label,
+    .searchResultsBody .mainPageContainer .searchBar form label {
+        padding: 5px;
+    /*    padding-right: 15px;*/
+    }
+
+    .indexBody .mainPageContainer .searchBar form select,
+    .searchResultsBody .mainPageContainer .searchBar form select {
+        border: 0;
+        padding: 3px;
+        padding-right: 5px;
+        border-radius: 5px;
+        font-size: 1rem;
+        outline: none;
+        margin-top: 5px;
+    }
+
+    .indexBody .mainPageContainer .searchBar form label, 
+    .searchResultsBody .mainPageContainer .searchBar form label, 
+    .indexBody .mainPageContainer .searchBar form select,
+    .searchResultsBody .mainPageContainer .searchBar form select {
+        display: inline-block;
+    /*    float: right;*/
+    }
+
+    .indexBody .mainPageContainer .searchBar input[type=search] {
+        border: 0;
+        padding: 5px;
+        padding-right: 15px;
+        border-radius: 5px;
+        width: 80%;
+        font-size: 1.15rem;
+        outline: none;
+    }
+
+    .indexBody .mainPageContainer .searchBar input[type=submit] {
+        border: 0;
+        padding: 5px;
+        border-radius: 5px;
+        width: 10%;
+        color: white;
+        background-color: #6C757D;
+        font-size: 1.15rem;
+        outline: none;
+    }
+
+    .indexBody .mainPageContainer .footer h5 {
+        padding-top: 5px;
+        text-align: center;
+    }
+
+    .indexBody .mainPageContainer .footer h5 a {
+        color: lightgray;
+    }
+
+
+    /*-----------------------------------*/
+
+
+
+    .searchResultsBody .mainPageContainer .header , .searchResultsBody .mainPageContainer .searchBar {
+        display: inline-block;
+    }
+
+    .searchResultsBody .mainPageContainer .header {
+        width: 25%;
+    }
+
+    .searchResultsBody .mainPageContainer .header h3 {
+        font-size: 5em;
+    }
+
+    .searchResultsBody .mainPageContainer .header h3 a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .searchResultsBody .mainPageContainer .searchBar {
+        width: 60%;
+        margin-top: 25px;
+    }
+
+    .searchResultsBody .mainPageContainer .searchBar input[type=search] {
+        border: 0;
+        padding: 5px;
+        padding-right: 15px;
+        border-radius: 5px;
+        width: 80%;
+        font-size: 1.15rem;
+        outline: none;
+    }
+
+    .searchResultsBody .mainPageContainer .searchBar input[type=submit] {
+        border: 0;
+        padding: 5px;
+        border-radius: 5px;
+        width: 10%;
+        color: white;
+        background-color: #6C757D;
+        font-size: 1.15rem;
+        outline: none;
+    }
+
+    .searchResultsBody .mainPageContainer hr {
+        border: 1px solid white;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        width: 90%;
+        margin-right: 5%;   
+    }
+
+    .searchResultsBody .mainPageContainer .searchResults .resultsTable {
+        text-align: right;
+        width: 80%;
+        margin-right: 10%;
+        border-collapse: collapse;
+        background-color: #F1F1F1;
+        color: black;
+        border-radius: 0 0 5px 5px;
+    }
+
+    .searchResultsBody .mainPageContainer .searchResults .resultsTable caption {
+        text-align: right;
+        padding: 10px;
+        font-size: 1.5em;
+        background-color: #F1F1F1;
+        color: black;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .searchResultsBody .mainPageContainer .searchResults .resultsTable .dividor {
+        border: 1px solid black;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 99%;
+        margin-right: 0; 
+        border-style: dotted;
+    }
+
+    .searchResultsBody .mainPageContainer .searchResults .resultsTable .dividor:last-child {
+         border: 0;
+    }
+
+    .searchResultsBody .mainPageContainer .searchResults .resultsTable th, .searchResultsBody .mainPageContainer .searchResults .resultsTable td {
+        vertical-align: top;
+        border-bottom: 2px solid black;
+        padding: 5px
+    }
+
+     .searchResultsBody .mainPageContainer .searchResults .resultsTable tr:last-child td {
+        border-bottom: 0;
+    }
+
+    .searchResultsBody .mainPageContainer .searchResults .resultsTable td a {
+        color: gray;
+        cursor: pointer;
+    }
+
+
+
+
+
+    .floatingInfo {
+        display: none;
+        position: fixed;
+        bottom: 50%;
+        right: 25%;
+        min-width: 50%;
+        max-width: 50%;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    .floatingInfo-header {
+        padding: 25px 15px;
+        background: #555;
+        font-size: 30px;
+        color: white;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .floatingInfo-container {
+        padding: 15px;
+        background-color: #ccc;
+        color: black;
+        border-radius: 0 0 5px 5px;
+    }
+
+    .closebtn {
+        position: absolute;
+        top: 5px;
+        left: 15px;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .closebtn:hover {
+        color: lightgrey;
+    }
+
+
+
+
+
+
+    /*----------------------------------------------------------------*/
+
+
+
+    .pharmSignupBody .mainPageContainer .signupFormContainer {
+        width: 60%;
+        margin-right: 20%;
+        background-color: #F1F1F1;
+        color: black;
+        font-weight: 600;
+        border-radius: 5px;
+        padding: 15px;
+        position: absolute;
+        top: 15%;
+    }
+
+    .pharmSignupBody .mainPageContainer .signupFormContainer label, .pharmSignupBody .mainPageContainer .signupFormContainer input {
+        display: block;
+        width: 60%;
+        font-size: 1.25rem;
+        border: 0;
+        margin: 5px;
+        padding: 5px;
+        background-color: transparent;
+    }
+
+    .pharmSignupBody .mainPageContainer .signupFormContainer .cityTxt,
+    .pharmSignupBody .mainPageContainer .signupFormContainer .govTxt {
+        display: inline-block;
+        width: 8%;
+        font-size: 1rem;
+        border: 0;
+        margin: 5px;
+        padding: 5px;
+        background-color: transparent;
+    }
+
+    .pharmSignupBody .mainPageContainer .signupFormContainer select {
+        display: inline-block;
+        width: 50%;
+        font-size: 1.25rem;
+        border: 0;
+        margin: 5px;
+        padding: 5px;
+        background-color: transparent;
+    }
+
+    .pharmSignupBody .mainPageContainer .signupFormContainer input,
+    .pharmSignupBody .mainPageContainer .signupFormContainer select{
+        border-bottom: 1px solid lightgray;
+        outline: none;
+    }
+
+    .pharmSignupBody .mainPageContainer .signupFormContainer input:focus,
+    .pharmSignupBody .mainPageContainer .signupFormContainer select:focus{
+        border-bottom: 1px solid gray;
+    }
+
+    .pharmSignupBody .mainPageContainer .signupFormContainer input[type=submit] {
+        background-color: #6C757D;
+        width: 20%;
+        color: white;
+        border-radius: 5px;
+        margin-top: 15px;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .pharmSignupBody .mainPageContainer .signupFormContainer input[type=button] {
+        width: 10%;
+        color: black;
+        border: 0;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .err {
+        color: orangered;
+    }
+
+    .success{
+        color: lawngreen;
+    }
+
+
+
+    /*-----------------------------------------------------------*/
+
+    .profileBody .profileMainPageContainer nav {
+        background-color: #4D4D4D;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .profileBody .profileMainPageContainer nav p,
+    .profileBody .profileMainPageContainer nav a {
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .profileBody .profileMainPageContainer nav a {
+        float: left;
+        border: 1px solid white;
+        background-color: white;
+        padding: 7px;
+        margin-top: -7px;
+        border-radius: 5px;
+        color: #4D4D4D;
+    }
+
+    .card {
+        background-color: #F1F1F1;
+        color: black;
+        font-weight: 600;
+        border-radius: 5px;
+        padding: 15px;
+        float: right;
+        margin-top: 35px;
+        max-height: 70vh;
+        overflow: auto;
+    }
+
+    .mainCard {
+        width: 50vw;
+        margin-right: 5vw;
+        margin-left: 5vw;
+    }
+
+    .infoCard {
+        width: 30vw;
+    }
+
+    .card::-webkit-scrollbar {
+      width: 10px;
+        border-radius: 5px;
+    }
+
+    /* Track */
+    .card::-webkit-scrollbar-track {
+      background: #f1f1f1; 
+        border-radius: 5px;
+    }
+
+    /* Handle */
+    .card::-webkit-scrollbar-thumb {
+      background: #888; 
+        border-radius: 4px;
+    }
+
+    /* Handle on hover */
+    .card::-webkit-scrollbar-thumb:hover {
+      background: #555; 
+    }
+
+    .infoCard h3 {
+        padding-bottom: 15px;
+    }
+
+    .infoCard h3 span {
+        font-size: 0.85rem;
+    }
+
+    .infoCard .infoLabel {
+        text-decoration: underline;
+        margin-right: 15px;
+    }
+
+    .infoCard .mailLabel {
+        direction: rtl;
+        display: inline-block;
+    }
+
+    .infoCard .mail {
+        direction:ltr;
+        display:inline-block;
+    }
+
+    .mainCard .fakeForm {
+        display: inline-block;
+    }
+
+    .mainCard .fakeForm input[type=number] {
+        display: none;
+    }
+
+    .mainCard .fakeForm input[type=submit] {
+        border: 0;
+        background-color: white;
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+
+    .mainCard .fakeForm input[type=submit]:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .mainCard .profileSearch input[type=search] {
+        border: 0;
+        padding: 5px;
+        padding-right: 15px;
+        margin-top: 10px;
+        border-radius: 5px;
+        width: 40%;
+        font-size: 1rem;
+        outline: none;
+    }
+
+    /* clears the 'X' from Internet Explorer */
+    .mainCard .profileSearch input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
+    .mainCard .profileSearch input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
+
+    /* clears the 'X' from Chrome */
+    .mainCard .profileSearch input[type="search"]::-webkit-search-decoration,
+    .mainCard .profileSearch input[type="search"]::-webkit-search-cancel-button,
+    .mainCard .profileSearch input[type="search"]::-webkit-search-results-button,
+    .mainCard .profileSearch input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+
+    .mainCard .profileSearch input[type=submit] {
+        border: 0;
+        padding: 5px;
+        border-radius: 5px;
+        width: 7%;
+        color: white;
+        background-color: #6C757D;
+        font-size: 1rem;
+        outline: none;
+    }
+
+    .mainCard .profileSearch a {
+        text-decoration: none;
+        font-size: 0.85rem;
+        color: blue;
+    }
+}
+
+/* iPhone 4 ----------- */
+/*
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+
+}
+*/
